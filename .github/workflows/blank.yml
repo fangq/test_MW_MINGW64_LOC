@@ -16,6 +16,6 @@ jobs:
       
       - name: Compile MEX
         shell: bash
-        run: cmd //c mex.bat -V explore.c
-        env: 
+        run: cmd //c mex.bat -f mexopts_msys2_gcc.xml -V explore.c
+        env:
           MW_MINGW64_LOC: C:\Some\Path\I\Defined
