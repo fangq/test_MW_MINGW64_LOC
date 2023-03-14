@@ -15,6 +15,7 @@ jobs:
           command: copyfile(fullfile(matlabroot,'extern','examples','mex','explore.c'),'.','f')
       
       - name: Compile MEX
-        run: mex -V explore.c
+        shell: bash
+        run: cmd //c mex.bat -V explore.c
         env: 
           MW_MINGW64_LOC: C:\Some\Path\I\Defined
